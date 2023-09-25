@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - HTML and CSS Services</title>
+    <link rel="stylesheet" href="Webpage.CSS">
+    <link rel="icon" type="Image/png" href="Favicon.png">
+</head>
+<body>
+  <header>
+    <img src="Favicon.png" alt="Logo">
+    <h1>Contact Page</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Webpage.HTML">Home</a></li>
+            <li><a href="Services.HTML">Services</a></li>
+            <li><a href="Contact.HTML">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <form action="Contact.php" method="post">
+        <label for="First Name"> <B>First Name:</B></label>
+        <input type="text" id="FirstName" required>
+    <br>
+        <label for="Last Name"> <b>Last Name:</b></label>
+        <input type="text" id="LastName" required>
+        <br>
+        <label for="Email"><b>Email:</b></label>
+        <input type="text" id="Email" required>
+    <br>
+        <label for ="Tiers"><b>Choose a Tier For HTML</b></label>
+            <select name ="Tiers" id="Tiers">
+                <option value="None">None</option>
+                <option value="Basic">Basic Tier</option>
+                <option value="Gold">Gold Tier</option>
+                <option value="Premium">Premium Tier</option>
+            </select>
+        <br>
+        <label for="Tiers"><b>Choose a Tier For CSS</b></label>
+            <select name="Tiers" id="Tiers">
+                <option value="None">None</option>
+                <option value="Basic">Basic Tier</option>
+                <option value="Gold">Gold Tier</option>
+                <option value="Premium">Premium Tier</option>
+            </select>
+        <br>
+        <div class="textField">
+    <label for="Description"><b>Give a Description of The Project:</b></label>
+            <textarea id="Description" name="Description" rows="4" cols="50"></textarea>    
+  </form>
+  </div>
+    <button type="submit" formaction="https://mail.google.com/mail/u/0/#inbox?compose=new" class="button"><b>Submit</b></button>
+    
+</body>
+<footer>
+    <p>&copy; 2023 HTML and CSS Services</p>
+</footer>
+</html>
